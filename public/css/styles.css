@@ -1,0 +1,437 @@
+/*Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+*{ margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+ 
+    
+    /*aca empieza el header*/
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.main-header{
+   
+    background-color:#EAC926 ;
+    padding: 20px;
+   
+    width: 100vw;
+   
+
+
+}
+
+
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+
+.logo img{
+    width: 40vw;
+}
+
+.barra-de-busqueda{
+    padding: 20px;
+    width: 50%;
+    font-size:  20px;
+    display: flex;
+    
+}
+
+.barra-de-busqueda p{
+    
+    width: 25px;
+    border: solid 1px grey;
+    background-color: white;
+}
+
+.compra-en-cuotas{
+    margin:auto; 
+    font-size: 17px;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.compra-en-cuotas p{
+    margin: auto;
+}
+
+.burguer-button{
+    background-color: blue;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius:  8px; ;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px auto 0px;
+}
+
+.navbar{display: none;
+    
+}
+
+    
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #222222 ;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: 300;
+   
+}
+
+.banner img{
+    width: 100vw;
+}
+
+/*aca empieza el main*/
+
+
+
+ main h3{
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ .fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+
+.price{
+    width: 30%;
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    padding-top: 20px;
+  
+}
+
+section.banner img{
+    width: 100%;
+   
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.registrarse, .login{
+    display: block;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+
+.registrarse div, .login div{
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.registrarse label{
+    display: block;
+}
+
+.buttons{
+    background-color:#ebebeb;
+    color: black;
+    border-radius: 8%;
+    padding: 5px 10px;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 10px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article .description{
+    display: none;}
+
+
+.discount{
+    width: 70%;
+}
+/*aca empieza el footer*/
+
+.main-footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 30px;
+   
+}
+
+.sub-footer{
+    padding: 15px;
+}
+
+.sub-footer h4{
+    font-size: 24px;
+}
+
+.sub-footer p{
+    font-size: 20px;
+
+}
+
+.sub-footer i{
+    color: blue;
+    font-size: 2rem;
+}
+
+.tarjeta , .envio ,.seguridad{
+    margin-bottom: 10px;
+}
+
+/* aca empiezan los media queries*/
+
+@media (min-width: 361px){
+    
+    
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+   
+    
+   
+
+         main section article{
+             width: 43.9%;
+         }
+    
+
+   
+    }
+
+
+
+
+@media(min-width:768px){
+
+    .main-header{padding: 50px;}
+
+    .top-header{
+        justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .barra-de-busqueda{
+        width: 30%;
+    }
+
+    
+    .compra-en-cuotas{
+        width: 30%;
+        align-self: center;
+        text-align: right;
+    }
+    .burguer-button{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .navbar ul{
+        display: flex;
+    }
+
+    .navbar li{
+        margin: 0 5px;
+    }
+
+    .banner img{
+        display: flex;
+       
+    }
+
+    .logo img{
+        width:25vw;
+    }
+    main section article{
+        width: 22%;
+    }
+
+    main section article .description{
+        display: none ;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }   
+     
+     main article:hover  .description{ display: block}
+
+    main article:hover i{
+        transform: rotate(270deg) ;
+    }
+
+    
+    }
+
+    
+    
+
+
+
+@media(min-width:1200px){
+
+   
+    .logo, .navbar{
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+    .main-header{
+        padding: 50px;
+    }
+
+    .barra-de-busqueda{
+        display: flex;
+    }
+
+    
+    
+
+    .compra-en-cuotas{
+        max-width:none ;
+        align-items: center;
+        
+    }
+    .navbar{
+        margin-top: 35px;
+    }
+    .navbar li{
+        margin: 0 10px;
+    }
+    .navbar a{
+        font-size:19px ;
+    }
+
+    
+    
+
+    .buttons:hover{
+        background-color: blue;
+        color: white;
+    }
+
+    .sub-footer{
+        display: flex;
+    }
+
+    .sub-footer p{
+        font-size: 14px;
+    }
+
+    .sub-footer h4{
+        font-size: 20px;
+    }
+
+   .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+        color: #EAC926;
+    }
+
+    .copyright{
+        display: flex;
+    }
+ 
+   
+}
+
